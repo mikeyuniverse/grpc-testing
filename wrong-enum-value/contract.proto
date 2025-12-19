@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "github.com/mikeyuniverse/grpc-testing/wrong-enum-value/status;status";
+
+service StatusAPI {
+    rpc CheckStatus (CheckStatusRequest) returns (CheckStatusResponse);
+}
+
+enum Status {
+    STATUS_UNSPECIFIED = 0;
+    STATUS_FIRST = 1;
+    STATUS_SECOND = 2;
+}
+
+message CheckStatusRequest {
+    Status status = 1;
+}
+
+message CheckStatusResponse {}
