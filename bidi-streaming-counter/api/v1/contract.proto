@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/mikeyuniverse/grpc-testing/streaming/increment;increment";
+option go_package = "github.com/mikeyuniverse/grpc-testing/bidi-streaming-counter/increment;increment";
 
 service IncrementAPI {
     rpc Inc (stream IncValue) returns (stream IncValue);

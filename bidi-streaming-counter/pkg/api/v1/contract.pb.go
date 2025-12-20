@@ -73,7 +73,7 @@ const file_api_v1_contract_proto_rawDesc = "" +
 	"\bIncValue\x12\x14\n" +
 	"\x05value\x18\x01 \x01(\x03R\x05value2/\n" +
 	"\fIncrementAPI\x12\x1f\n" +
-	"\x03Inc\x12\t.IncValue\x1a\t.IncValue(\x010\x01BEZCgithub.com/mikeyuniverse/grpc-testing/streaming/increment;incrementb\x06proto3"
+	"\x03Inc\x12\t.IncValue\x1a\t.IncValue(\x010\x01BRZPgithub.com/mikeyuniverse/grpc-testing/bidi-streaming-counter/increment;incrementb\x06proto3"
 
 var (
 	file_api_v1_contract_proto_rawDescOnce sync.Once
