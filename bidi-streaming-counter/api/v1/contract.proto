@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "github.com/mikeyuniverse/grpc-testing/streaming/increment;increment";
+
+service IncrementAPI {
+    rpc Inc (stream IncValue) returns (stream IncValue);
+}
+
+message IncValue {
+    int64 value = 1;
+}
